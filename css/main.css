@@ -8,6 +8,7 @@
     --dark-background-color: #2F303A;
     --grey-background-color: #F5F4FA;
     --border-color: #EEEEEE;
+    --border-bottom: #ECECEC;
 }
 
 * {
@@ -55,7 +56,7 @@ img {display: block;}
     margin-right: 50px;
 }
 
-.link-current, .nav-link {
+.link-current, .nav-link, .contact-link {
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -63,6 +64,7 @@ img {display: block;}
 .main-nav {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid var(--border-bottom);
   }  
 
 .principles-section, .work-section, .workers-section {
@@ -309,23 +311,24 @@ img {display: block;}
     margin-bottom: 0;
 }
 
+.project-text {
+    border: 1px solid var(--border-color);
+   padding: 20px 24px 20px 24px;
+}
+
 .project-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
 }
 
 .project-type {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
-    margin-bottom: 20px;
-    margin-left: 24px;
 }
 
 .project-list {
