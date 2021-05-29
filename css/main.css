@@ -36,8 +36,12 @@ ul {
 
 img {display: block;}
 
+.header-section {
+    border-bottom: 1px solid var(--border-bottom);
+}
+
 .hidden {
-    text-indent: 100%; white-space: nowrap; overflow: hidden;}
+    display: none;}
 
 .site-nav {
     display: flex;
@@ -64,10 +68,9 @@ img {display: block;}
 .main-nav {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--border-bottom);
   }  
 
-.principles-section, .work-section, .workers-section {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
       }
@@ -209,15 +212,12 @@ img {display: block;}
 .principles-list, .work-list, .workers-list, .button-list, .project-list {
     display: flex;}
 
-.principles-title:not(:last-child) {
-    margin-left: 0;
-    margin-right: 30px;}
-
  .principles-item:not(:last-child),  .work-item:not(:last-child), .box-workers:not(:last-child){
      margin-right: 30px;
  }
  .button-list {
-     justify-content: center;}
+    margin-bottom: 56px;
+    justify-content: center;}
 
  .button-item:not(:last-child) {
      margin-right: 8px;
@@ -235,16 +235,18 @@ img {display: block;}
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
 .workers-type {
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
+}
+
+.workers-text {
+    margin-top: 30px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .adress {
@@ -262,7 +264,8 @@ img {display: block;}
 }
 
 .footer-logo {
-    padding-bottom: 30px;
+    display: inline-block;
+    margin-bottom: 30px;
  }
 
 .footer-link {
@@ -281,7 +284,6 @@ img {display: block;}
     line-height: 1.6;
     text-align: center;
     cursor: pointer;
-    margin-bottom: 56px;
     display: inline-block;
     border: 1px solid transparent;
     border-radius: 4px;
